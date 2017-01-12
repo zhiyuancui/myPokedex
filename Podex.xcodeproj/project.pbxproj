@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					8FC408361E281560002B610C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 28TQRMSQ7K;
 						ProvisioningStyle = Automatic;
 					};
 					8FC4084D1E281560002B610C = {
@@ -414,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28TQRMSQ7K;
 				INFOPLIST_FILE = Podex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuan.Podex;
@@ -426,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 28TQRMSQ7K;
 				INFOPLIST_FILE = Podex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhiyuan.Podex;
