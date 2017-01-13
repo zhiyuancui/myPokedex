@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Podex
+
 
 class PodexTests: XCTestCase {
     
