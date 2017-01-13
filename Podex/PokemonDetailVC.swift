@@ -13,10 +13,9 @@ class PokemonDetailVC: UIViewController {
     var pokemon: Pokemon!
 
     @IBOutlet weak var nameLbl: UILabel!
-    
     @IBOutlet weak var mainImg: UIImageView!
-    @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var TypeLbl: UILabel!
+    @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var defenseLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
     @IBOutlet weak var pokedexLbl: UILabel!
@@ -30,10 +29,32 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
+        nameLbl.text = pokemon.name.capitalized
+        
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImg.image = img
+        cuurentEvoImg.image = img
+        pokedexLbl.text = "\(pokemon.pokedexId)"
+        
+        pokemon.downloadPokemonDetail{
+            
+            self.updateUI()
+        
+        }
         // Do any additional setup after loading the view.
     }
 
+    func updateUI(){
+        
+        attackLbl.text  = pokemon.attack
+        defenseLbl.text = pokemon.defense
+        heightLbl.text  = pokemon.height
+        weightLbl.text  = pokemon.weight
+        descriptionLbl.text = pokemon.description
+        TypeLbl.text    = pokemon.type
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
